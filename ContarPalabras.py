@@ -1,10 +1,9 @@
 def contar_palabras (text):
-    frase = {}
-    lista = text.lower().split()
-    for frase in lista:
-        if frase in frase:
-            frase[frase] +=1
+    resultado = {}
+    for word in text.split(''):
+        lower_word = text.lower()
+        if word in resultado:
+            resultado[word.lower()] +=1
         else:
-            frase[frase] =1
-    resultado = frase 
+            resultado[word.lower()] =1
     return resultado
